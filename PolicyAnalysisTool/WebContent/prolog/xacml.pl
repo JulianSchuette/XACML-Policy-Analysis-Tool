@@ -1,0 +1,135 @@
+% ---------------- Individuals ---------
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Effect'('http://www.owl-ontologies.com/Ontology1226501339.owl#deny').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Condition'('http://www.owl-ontologies.com/Ontology1226501339.owl#myCondition').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Obligation'('http://www.owl-ontologies.com/Ontology1226501339.owl#myObligation').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Policy'('http://www.owl-ontologies.com/Ontology1226501339.owl#myOtherPolicy').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasRule'('http://www.owl-ontologies.com/Ontology1226501339.owl#myOtherPolicy','http://www.owl-ontologies.com/Ontology1226501339.owl#myRule').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasTarget'('http://www.owl-ontologies.com/Ontology1226501339.owl#myOtherPolicy','http://www.owl-ontologies.com/Ontology1226501339.owl#myTarget').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Target'('http://www.owl-ontologies.com/Ontology1226501339.owl#myOtherTarget').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Policy'('http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicy').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasObligation'('http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicy','http://www.owl-ontologies.com/Ontology1226501339.owl#myObligation').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasRule'('http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicy','http://www.owl-ontologies.com/Ontology1226501339.owl#myRule').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasRuleCombiningAlgorithm'('http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicy','http://www.owl-ontologies.com/Ontology1226501339.owl#myRuleCombiningAlgorithm').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasTarget'('http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicy','http://www.owl-ontologies.com/Ontology1226501339.owl#myTarget').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#PolicyCombiningAlgorithm'('http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicyCombiningAlgorithm').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#PolicySet'('http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicySet').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasObligation'('http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicySet','http://www.owl-ontologies.com/Ontology1226501339.owl#myObligation').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicy'('http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicySet','http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicy').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicyCombiningAlgorithm'('http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicySet','http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicyCombiningAlgorithm').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasTarget'('http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicySet','http://www.owl-ontologies.com/Ontology1226501339.owl#myTarget').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Rule'('http://www.owl-ontologies.com/Ontology1226501339.owl#myRule').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasCondition'('http://www.owl-ontologies.com/Ontology1226501339.owl#myRule','http://www.owl-ontologies.com/Ontology1226501339.owl#myCondition').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasEffect'('http://www.owl-ontologies.com/Ontology1226501339.owl#myRule','http://www.owl-ontologies.com/Ontology1226501339.owl#permit').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#hasTarget'('http://www.owl-ontologies.com/Ontology1226501339.owl#myRule','http://www.owl-ontologies.com/Ontology1226501339.owl#myTarget').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#RuleCombiningAlgorithm'('http://www.owl-ontologies.com/Ontology1226501339.owl#myRuleCombiningAlgorithm').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Target'('http://www.owl-ontologies.com/Ontology1226501339.owl#myTarget').
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Effect'('http://www.owl-ontologies.com/Ontology1226501339.owl#permit').
+'AllDisjointClasses'('__file:///home/julian/thea/xacml.owl#__Description7').
+'List'('__file:///home/julian/thea/xacml.owl#__List10').
+'List'('__file:///home/julian/thea/xacml.owl#__List11').
+'List'('__file:///home/julian/thea/xacml.owl#__List12').
+'List'('__file:///home/julian/thea/xacml.owl#__List13').
+'List'('__file:///home/julian/thea/xacml.owl#__List14').
+'List'('__file:///home/julian/thea/xacml.owl#__List15').
+'List'('__file:///home/julian/thea/xacml.owl#__List16').
+'List'('__file:///home/julian/thea/xacml.owl#__List17').
+'List'('__file:///home/julian/thea/xacml.owl#__List18').
+'List'('__file:///home/julian/thea/xacml.owl#__List19').
+'List'('__file:///home/julian/thea/xacml.owl#__List20').
+'List'('__file:///home/julian/thea/xacml.owl#__List21').
+'List'('__file:///home/julian/thea/xacml.owl#__List22').
+% ---------------- Classes ---------
+% ---------------- Subclasses ---------
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#Action'(X).
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#Condition'(X).
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#Effect'(X).
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#Environment'(X).
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#Obligation'(X).
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#Policy'(X).
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#PolicyCombiningAlgorithm'(X).
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#PolicySet'(X).
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#Resource'(X).
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#Rule'(X).
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#RuleCombiningAlgorithm'(X).
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#Subject'(X).
+'Thing'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#Target'(X).
+% ---------------- Properties ---------
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Target'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasAction'(X,_).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Action'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasAction'(_,X).
+sameIndividuals(X,Y):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasAction'(X,Z),'http://www.owl-ontologies.com/Ontology1226501339.owl#hasAction'(Y,Z).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Rule'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasCondition'(X,_).
+sameIndividuals(X,Y):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasCondition'(X,Z),'http://www.owl-ontologies.com/Ontology1226501339.owl#hasCondition'(Y,Z).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Rule'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasEffect'(X,_).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Effect'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasEffect'(_,X).
+sameIndividuals(X,Y):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasEffect'(Z,X),'http://www.owl-ontologies.com/Ontology1226501339.owl#hasEffect'(Z,Y).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Target'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasEnvironment'(X,_).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Environment'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasEnvironment'(_,X).
+sameIndividuals(X,Y):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasEnvironment'(X,Z),'http://www.owl-ontologies.com/Ontology1226501339.owl#hasEnvironment'(Y,Z).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Obligation'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasObligation'(_,X).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#PolicySet'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicy'(X,_).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Policy'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicy'(_,X).
+sameIndividuals(X,Y):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicy'(X,Z),'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicy'(Y,Z).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#PolicySet'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicyCombiningAlgorithm'(X,_).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#PolicyCombiningAlgorithm'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicyCombiningAlgorithm'(_,X).
+sameIndividuals(X,Y):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicyCombiningAlgorithm'(Z,X),'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicyCombiningAlgorithm'(Z,Y).
+sameIndividuals(X,Y):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicyCombiningAlgorithm'(X,Z),'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicyCombiningAlgorithm'(Y,Z).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#PolicySet'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicySet'(_,X).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Target'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasResource'(X,_).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Resource'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasResource'(_,X).
+sameIndividuals(X,Y):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasResource'(X,Z),'http://www.owl-ontologies.com/Ontology1226501339.owl#hasResource'(Y,Z).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Policy'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasRule'(X,_).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Rule'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasRule'(_,X).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Policy'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasRuleCombiningAlgorithm'(X,_).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#RuleCombiningAlgorithm'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasRuleCombiningAlgorithm'(_,X).
+sameIndividuals(X,Y):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasRuleCombiningAlgorithm'(X,Z),'http://www.owl-ontologies.com/Ontology1226501339.owl#hasRuleCombiningAlgorithm'(Y,Z).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Target'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasSubject'(X,_).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Subject'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasSubject'(_,X).
+sameIndividuals(X,Y):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasSubject'(X,Z),'http://www.owl-ontologies.com/Ontology1226501339.owl#hasSubject'(Y,Z).
+'http://www.owl-ontologies.com/Ontology1226501339.owl#Target'(X):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasTarget'(_,X).
+sameIndividuals(X,Y):-
+     'http://www.owl-ontologies.com/Ontology1226501339.owl#hasTarget'(Z,X),'http://www.owl-ontologies.com/Ontology1226501339.owl#hasTarget'(Z,Y).

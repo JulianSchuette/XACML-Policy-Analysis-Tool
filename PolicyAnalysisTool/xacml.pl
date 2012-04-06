@@ -1,0 +1,176 @@
+% ---------------- Individuals ---------
+statement('hydra#urn_oasis_names_tc_xacml_1.0_function_string-one-and-only').
+'hydra#Policy'('hydra#TimeRangePolicy').
+'hydra#hasRule'('hydra#TimeRangePolicy','hydra#NoHumans').
+'hydra#hasRule'('hydra#TimeRangePolicy','hydra#CommitRule').
+'hydra#hasRule'('hydra#TimeRangePolicy','hydra#DenyAllOthers').
+'hydra#hasTarget'('hydra#TimeRangePolicy','hydra#com.sun.xacml.Target_10be11c').
+'hydra#hasRuleCombiningAlgorithm'('hydra#TimeRangePolicy','urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable').
+'hydra#Target'('hydra#com.sun.xacml.Target_10be11c').
+'hydra#hasEnvironment'('hydra#com.sun.xacml.Target_10be11c','hydra#ANY').
+'hydra#hasResource'('hydra#com.sun.xacml.Target_10be11c','hydra#com.sun.xacml.TargetMatchGroup_e824fd').
+'hydra#hasSubject'('hydra#com.sun.xacml.Target_10be11c','hydra#ANY').
+'hydra#hasAction'('hydra#com.sun.xacml.Target_10be11c','hydra#com.sun.xacml.TargetMatchGroup_1f93c3c').
+'hydra#Resource'('hydra#com.sun.xacml.TargetMatchGroup_e824fd').
+'hydra#hasMatch'('hydra#com.sun.xacml.TargetMatchGroup_e824fd','hydra#com.sun.xacml.TargetMatch_1a30e33').
+'hydra#Match'('hydra#com.sun.xacml.TargetMatch_1a30e33').
+'hydra#hasFunction'('hydra#com.sun.xacml.TargetMatch_1a30e33',literal('')).
+'hydra#hasAttributeValue'('hydra#com.sun.xacml.TargetMatch_1a30e33','main-door').
+'hydra#hasAttributeId'('hydra#com.sun.xacml.TargetMatch_1a30e33','urn:oasis:names:tc:xacml:1.0:resource:resource-id').
+'Statement'('urn:oasis:names:tc:xacml:1.0:function:string-equal').
+'hydra#Action'('hydra#com.sun.xacml.TargetMatchGroup_1f93c3c').
+'hydra#hasMatch'('hydra#com.sun.xacml.TargetMatchGroup_1f93c3c','hydra#com.sun.xacml.TargetMatch_1e1c7c0').
+'hydra#Match'('hydra#com.sun.xacml.TargetMatch_1e1c7c0').
+'hydra#hasFunction'('hydra#com.sun.xacml.TargetMatch_1e1c7c0',literal('')).
+'hydra#hasAttributeValue'('hydra#com.sun.xacml.TargetMatch_1e1c7c0',open).
+'hydra#hasAttributeId'('hydra#com.sun.xacml.TargetMatch_1e1c7c0','urn:oasis:names:tc:xacml:1.0:action:action-id').
+'hydra#Rule'('hydra#NoHumans').
+'hydra#hasEffect'('hydra#NoHumans','hydra#deny').
+'hydra#hasTarget'('hydra#NoHumans','hydra#com.sun.xacml.Target_d0107a').
+'hydra#Target'('hydra#com.sun.xacml.Target_d0107a').
+'hydra#hasEnvironment'('hydra#com.sun.xacml.Target_d0107a','hydra#ANY').
+'hydra#hasResource'('hydra#com.sun.xacml.Target_d0107a','hydra#ANY').
+'hydra#hasSubject'('hydra#com.sun.xacml.Target_d0107a','hydra#com.sun.xacml.TargetMatchGroup_1e9cf8b').
+'hydra#hasAction'('hydra#com.sun.xacml.Target_d0107a','hydra#ANY').
+'hydra#Subject'('hydra#com.sun.xacml.TargetMatchGroup_1e9cf8b').
+'hydra#hasMatch'('hydra#com.sun.xacml.TargetMatchGroup_1e9cf8b','hydra#com.sun.xacml.TargetMatch_138d07b').
+'hydra#Match'('hydra#com.sun.xacml.TargetMatch_138d07b').
+'hydra#hasFunction'('hydra#com.sun.xacml.TargetMatch_138d07b',literal('')).
+'hydra#hasAttributeValue'('hydra#com.sun.xacml.TargetMatch_138d07b','Human').
+'hydra#hasAttributeId'('hydra#com.sun.xacml.TargetMatch_138d07b','urn:oasis:names:tc:xacml:1.0:subject:subject-id').
+'Statement'('urn:oasis:names:tc:xacml:1.0:function:is-instance-of').
+'hydra#Rule'('hydra#CommitRule').
+'hydra#hasEffect'('hydra#CommitRule','hydra#permit').
+'hydra#hasTarget'('hydra#CommitRule','hydra#com.sun.xacml.Target_ff6b0d').
+'hydra#hasCondition'('hydra#CommitRule','hydra#com.sun.xacml.cond.Condition_cd41c4').
+'hydra#Target'('hydra#com.sun.xacml.Target_ff6b0d').
+'hydra#hasEnvironment'('hydra#com.sun.xacml.Target_ff6b0d','hydra#ANY').
+'hydra#hasResource'('hydra#com.sun.xacml.Target_ff6b0d','hydra#ANY').
+'hydra#hasSubject'('hydra#com.sun.xacml.Target_ff6b0d','hydra#ANY').
+'hydra#hasAction'('hydra#com.sun.xacml.Target_ff6b0d','hydra#ANY').
+'hydra#Condition'('hydra#com.sun.xacml.cond.Condition_cd41c4').
+'hydra#hasExpression'('hydra#com.sun.xacml.cond.Condition_cd41c4','hydra#com.sun.xacml.cond.Apply_198bdbc').
+'hydra#Apply'('hydra#com.sun.xacml.cond.Apply_198bdbc').
+'hydra#hasFunction'('hydra#com.sun.xacml.cond.Apply_198bdbc',literal('')).
+'hydra#hasAttribute'('hydra#com.sun.xacml.cond.Apply_198bdbc','hydra#com.sun.xacml.cond.Apply_d091d8').
+'hydra#hasAttribute'('hydra#com.sun.xacml.cond.Apply_198bdbc','hydra#StringAttribute_-986026857').
+'hydra#Apply'('hydra#com.sun.xacml.cond.Apply_d091d8').
+'hydra#hasFunction'('hydra#com.sun.xacml.cond.Apply_d091d8',literal('')).
+'hydra#hasAttribute'('hydra#com.sun.xacml.cond.Apply_d091d8','hydra#com.sun.xacml.attr.AttributeDesignator_1172f9d').
+'Statement'('urn:oasis:names:tc:xacml:1.0:function:string-one-and-only').
+'hydra#AttributeDesignator'('hydra#com.sun.xacml.attr.AttributeDesignator_1172f9d').
+'hydra#hasAttributeValue'('hydra#com.sun.xacml.attr.AttributeDesignator_1172f9d','admin@users.example.com').
+'hydra#hasAttributeId'('hydra#com.sun.xacml.attr.AttributeDesignator_1172f9d','SubjectAttributeDesignator').
+'hydra#StringAttribute'('hydra#StringAttribute_-986026857').
+'hydra#hasAttributeValue'('hydra#StringAttribute_-986026857','Blablabla').
+'hydra#Rule'('hydra#DenyAllOthers').
+'hydra#hasEffect'('hydra#DenyAllOthers','hydra#deny').
+'AllDisjointClasses'('__file:///media/Volume/eclipse-workspace/PolicyAnalysisTool/xacml_gen.owl#__Description4').
+'List'('__file:///media/Volume/eclipse-workspace/PolicyAnalysisTool/xacml_gen.owl#__Description5').
+'List'('__file:///media/Volume/eclipse-workspace/PolicyAnalysisTool/xacml_gen.owl#__Description6').
+'List'('__file:///media/Volume/eclipse-workspace/PolicyAnalysisTool/xacml_gen.owl#__Description7').
+'List'('__file:///media/Volume/eclipse-workspace/PolicyAnalysisTool/xacml_gen.owl#__Description8').
+'List'('__file:///media/Volume/eclipse-workspace/PolicyAnalysisTool/xacml_gen.owl#__Description9').
+'List'('__file:///media/Volume/eclipse-workspace/PolicyAnalysisTool/xacml_gen.owl#__Description10').
+'List'('__file:///media/Volume/eclipse-workspace/PolicyAnalysisTool/xacml_gen.owl#__Description11').
+'List'('__file:///media/Volume/eclipse-workspace/PolicyAnalysisTool/xacml_gen.owl#__Description12').
+'List'('__file:///media/Volume/eclipse-workspace/PolicyAnalysisTool/xacml_gen.owl#__Description13').
+'List'('__file:///media/Volume/eclipse-workspace/PolicyAnalysisTool/xacml_gen.owl#__Description14').
+% ---------------- Classes ---------
+% ---------------- Subclasses ---------
+'hydra#TargetElement'(X):-
+     'hydra#Environment'(X).
+'hydra#TargetElement'(X):-
+     'hydra#Subject'(X).
+'hydra#TargetElement'(X):-
+     'hydra#Resource'(X).
+'hydra#Attribute'(X):-
+     'hydra#StringAttribute'(X).
+'hydra#Attribute'(X):-
+     'hydra#AttributeDesignator'(X).
+'hydra#TargetElement'(X):-
+     'hydra#Action'(X).
+'hydra#TargetElement'(X):-
+     'hydra#Match'(X).
+'hydra#ConditionElement'(X):-
+     'hydra#Apply'(X).
+% ---------------- Properties ---------
+'hydra#Match'(X):-
+     'hydra#hasEval'(X,_).
+'hydra#Match'(X):-
+     'hydra#hasAttributeValue'(X,_).
+'hydra#Match'(X):-
+     'hydra#hasAttributeId'(X,_).
+'hydra#Match'(X):-
+     'hydra#hasMatch'(_,X).
+'hydra#Obligation'(X):-
+     'hydra#hasObligation'(_,X).
+'hydra#Policy'(X):-
+     'hydra#hasRule'(X,_).
+'hydra#Rule'(X):-
+     'hydra#hasRule'(_,X).
+'hydra#PolicySet'(X):-
+     'hydra#hasPolicySet'(_,X).
+'hydra#Rule'(X):-
+     'hydra#hasEffect'(X,_).
+'hydra#Effect'(X):-
+     'hydra#hasEffect'(_,X).
+sameIndividuals(X,Y):-
+     'hydra#hasEffect'(Z,X),'hydra#hasEffect'(Z,Y).
+'hydra#PolicySet'(X):-
+     'hydra#hasPolicyCombiningAlgorithm'(X,_).
+'hydra#PolicyCombiningAlgorithm'(X):-
+     'hydra#hasPolicyCombiningAlgorithm'(_,X).
+sameIndividuals(X,Y):-
+     'hydra#hasPolicyCombiningAlgorithm'(Z,X),'hydra#hasPolicyCombiningAlgorithm'(Z,Y).
+sameIndividuals(X,Y):-
+     'hydra#hasPolicyCombiningAlgorithm'(X,Z),'hydra#hasPolicyCombiningAlgorithm'(Y,Z).
+'hydra#Target'(X):-
+     'hydra#hasTarget'(_,X).
+sameIndividuals(X,Y):-
+     'hydra#hasTarget'(Z,X),'hydra#hasTarget'(Z,Y).
+'hydra#Target'(X):-
+     'hydra#hasEnvironment'(X,_).
+'hydra#Environment'(X):-
+     'hydra#hasEnvironment'(_,X).
+sameIndividuals(X,Y):-
+     'hydra#hasEnvironment'(X,Z),'hydra#hasEnvironment'(Y,Z).
+'hydra#Target'(X):-
+     'hydra#hasResource'(X,_).
+'hydra#Resource'(X):-
+     'hydra#hasResource'(_,X).
+sameIndividuals(X,Y):-
+     'hydra#hasResource'(X,Z),'hydra#hasResource'(Y,Z).
+'hydra#Policy'(X):-
+     'hydra#hasRuleCombiningAlgorithm'(X,_).
+'hydra#RuleCombiningAlgorithm'(X):-
+     'hydra#hasRuleCombiningAlgorithm'(_,X).
+sameIndividuals(X,Y):-
+     'hydra#hasRuleCombiningAlgorithm'(X,Z),'hydra#hasRuleCombiningAlgorithm'(Y,Z).
+'hydra#Target'(X):-
+     'hydra#hasSubject'(X,_).
+'hydra#Subject'(X):-
+     'hydra#hasSubject'(_,X).
+sameIndividuals(X,Y):-
+     'hydra#hasSubject'(X,Z),'hydra#hasSubject'(Y,Z).
+'hydra#PolicySet'(X):-
+     'hydra#hasPolicy'(X,_).
+'hydra#Policy'(X):-
+     'hydra#hasPolicy'(_,X).
+sameIndividuals(X,Y):-
+     'hydra#hasPolicy'(X,Z),'hydra#hasPolicy'(Y,Z).
+'hydra#Rule'(X):-
+     'hydra#hasCondition'(X,_).
+'hydra#Condition'(X):-
+     'hydra#hasCondition'(_,X).
+sameIndividuals(X,Y):-
+     'hydra#hasCondition'(X,Z),'hydra#hasCondition'(Y,Z).
+'hydra#Target'(X):-
+     'hydra#hasAction'(X,_).
+'hydra#Action'(X):-
+     'hydra#hasAction'(_,X).
+sameIndividuals(X,Y):-
+     'hydra#hasAction'(X,Z),'hydra#hasAction'(Y,Z).
+
+getExplanation(Effect, ResourceValue, ActionValue, SubjectValue, EnvironmentValue, Result):-setof([X, R, Effect, ResourceValue, ActionValue, SubjectValue, EnvironmentValue], (('hydra#hasEffect'(X,Effect) ; ('hydra#hasRule'(X,R),'hydra#hasEffect'(R,Effect))), 'hydra#hasTarget'(X, T), ('hydra#hasResource'(T, 'hydra#ANY')->(ResourceValue='hydra#ANY')		;('hydra#hasResource'(T, Resource), 'hydra#hasMatch'(Resource, ResourceMatch), 'hydra#hasAttributeValue'(ResourceMatch, ResourceValue))),	('hydra#hasAction'(T, 'hydra#ANY')->(ActionValue='hydra#ANY') 			;('hydra#hasAction'(T, Action), 'hydra#hasMatch'(Action, ActionMatch), 'hydra#hasAttributeValue'(ActionMatch, ActionValue))),	('hydra#hasSubject'(T, 'hydra#ANY')->(SubjectValue='hydra#ANY')		;('hydra#hasSubject'(T, Subject), 'hydra#hasMatch'(Subject, SubjectMatch), 'hydra#hasAttributeValue'(SubjectMatch, SubjectValue))),	('hydra#hasEnvironment'(T, 'hydra#ANY')->(EnvironmentValue='hydra#ANY');('hydra#hasEnvironment'(T, Environment), 'hydra#hasMatch'(Environment, EnvironmentMatch), 'hydra#hasAttributeValue'(EnvironmentMatch, EnvironmentValue)))), Result).	
+getRequiredAttributes(Effect, ResourceValue, ActionValue, SubjectValue, EnvironmentValue, Result):-setof([ResourceValue, SubjectValue, EnvironmentValue], (('hydra#hasEffect'(X,Effect) ; ('hydra#hasRule'(X,R),'hydra#hasEffect'(R,Effect))), 'hydra#hasTarget'(X, T), ('hydra#hasResource'(T, 'hydra#ANY')->(ResourceValue='hydra#ANY')		;('hydra#hasResource'(T, Resource), 'hydra#hasMatch'(Resource, ResourceMatch), 'hydra#hasAttributeValue'(ResourceMatch, ResourceValue))),	('hydra#hasAction'(T, 'hydra#ANY')->(ActionValue='hydra#ANY') 			;('hydra#hasAction'(T, Action), 'hydra#hasMatch'(Action, ActionMatch), 'hydra#hasAttributeValue'(ActionMatch, ActionValue))),	('hydra#hasSubject'(T, 'hydra#ANY')->(SubjectValue='hydra#ANY')		;('hydra#hasSubject'(T, Subject), 'hydra#hasMatch'(Subject, SubjectMatch), 'hydra#hasAttributeValue'(SubjectMatch, SubjectValue))),	('hydra#hasEnvironment'(T, 'hydra#ANY')->(EnvironmentValue='hydra#ANY');('hydra#hasEnvironment'(T, Environment), 'hydra#hasMatch'(Environment, EnvironmentMatch), 'hydra#hasAttributeValue'(EnvironmentMatch, EnvironmentValue)))), Result).	

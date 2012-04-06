@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  Policy: Action "open" applied to the main door is allowed to all humans. 
+	Otherwise, the result is DENY. 
+	Note that the term "Human" refers to a concept in the ontology and that every instance
+	which can be inferred to be "human" is granted access -->
+
+<Policy xmlns="urn:oasis:names:tc:xacml:1.0:policy"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	PolicyId="TimeRangePolicy"
+	RuleCombiningAlgId="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable">
+
+	<PolicyDefaults>
+		<XPathVersion>http://www.w3.org/TR/1999/Rec-xpath-19991116</XPathVersion>
+	</PolicyDefaults>
+
+	<Target>
+		<Subjects>
+			<AnySubject />
+		</Subjects>
+		<Resources>
+			<Resource>
+				<ResourceMatch
+					MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+					<AttributeValue
+						DataType="http://www.w3.org/2001/XMLSchema#string">main-door</AttributeValue>
+					<ResourceAttributeDesignator
+						DataType="http://www.w3.org/2001/XMLSchema#string"
+						AttributeId="urn:oasis:names:tc:xacml:1.0:resource:resource-id" />
+				</ResourceMatch>
+			</Resource>
+		</Resources>
+		<Actions>
+			<Action>
+				<ActionMatch
+					MatchId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+					<AttributeValue
+						DataType="http://www.w3.org/2001/XMLSchema#string">open</AttributeValue>
+					<ActionAttributeDesignator
+						DataType="http://www.w3.org/2001/XMLSchema#string"
+						AttributeId="urn:oasis:names:tc:xacml:1.0:action:action-id" />
+				</ActionMatch>
+			</Action>
+		</Actions>
+	</Target>
+
+	<Rule RuleId="NoHumans" Effect="Deny">
+		<Target>
+			<Subjects>
+				<Subject>
+					<SubjectMatch
+						MatchId="urn:oasis:names:tc:xacml:1.0:function:is-instance-of">
+						<AttributeValue
+							DataType="http://www.w3.org/2001/XMLSchema#string">
+							Human
+						</AttributeValue>
+						<SubjectAttributeDesignator
+							DataType="http://www.w3.org/2001/XMLSchema#string"
+							AttributeId="urn:oasis:names:tc:xacml:1.0:subject:subject-id" />
+					</SubjectMatch>
+				</Subject>
+			</Subjects>
+			<Resources>
+				<AnyResource />
+			</Resources>
+			<Actions>
+				<AnyAction />
+			</Actions>
+		</Target>
+	</Rule>
+
+	<Rule RuleId="CommitRule" Effect="Permit">
+
+		<Target>
+			<Subjects>
+				<AnySubject />
+			</Subjects>
+			<Resources>
+				<AnyResource />
+			</Resources>
+			<Actions>
+				<AnyAction />
+			</Actions>
+		</Target>
+
+		<Condition
+			FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+			<Apply
+				FunctionId="urn:oasis:names:tc:xacml:1.0:function:string-one-and-only">
+				<SubjectAttributeDesignator
+					DataType="http://www.w3.org/2001/XMLSchema#string"
+					AttributeId="group" Issuer="admin@users.example.com" />
+			</Apply>
+			<AttributeValue
+				DataType="http://www.w3.org/2001/XMLSchema#string">Blablabla</AttributeValue>
+		</Condition>
+
+	</Rule>
+
+	<Rule RuleId="DenyAllOthers" Effect="Deny" />
+
+</Policy>

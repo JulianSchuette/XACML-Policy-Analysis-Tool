@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns="hydra#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="hydra#">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="Target">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Action"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Subject"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="RuleCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Resource"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Effect"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Condition"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="PolicyCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Rule"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Environment"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Policy"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Obligation"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="PolicySet"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#Policy">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RuleCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Obligation"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PolicySet"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PolicyCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Effect"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Environment"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Condition"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Action"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Target"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Subject"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Rule"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Resource"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:ID="ZonkAction">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Action"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#PolicySet">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RuleCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Action"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Obligation"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Effect"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Rule"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Policy"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Environment"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Target"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Subject"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Condition"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PolicyCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Resource"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:ID="ComputedEffect"/>
+  <owl:Class rdf:about="#Environment">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Condition"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Policy"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Resource"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PolicyCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RuleCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Target"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Obligation"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Action"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Effect"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#PolicySet"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Subject"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Rule"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#Rule">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Condition"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Effect"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RuleCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Environment"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Resource"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Obligation"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PolicyCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Policy"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Action"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Subject"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#PolicySet"/>
+    <owl:disjointWith rdf:resource="#Target"/>
+  </owl:Class>
+  <owl:Class rdf:about="#RuleCombiningAlgorithm">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Obligation"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Rule"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Action"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Resource"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Effect"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Target"/>
+    <owl:disjointWith rdf:resource="#Policy"/>
+    <owl:disjointWith rdf:resource="#PolicySet"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PolicyCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Environment"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Subject"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Condition"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#Subject">
+    <owl:disjointWith rdf:resource="#RuleCombiningAlgorithm"/>
+    <owl:disjointWith rdf:resource="#Policy"/>
+    <owl:disjointWith rdf:resource="#Rule"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Resource"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PolicyCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Action"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Environment"/>
+    <owl:disjointWith rdf:resource="#Target"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Condition"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Obligation"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Effect"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#PolicySet"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Action">
+    <owl:disjointWith rdf:resource="#Policy"/>
+    <owl:disjointWith rdf:resource="#RuleCombiningAlgorithm"/>
+    <owl:disjointWith rdf:resource="#Target"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Resource"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Environment"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Effect"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Subject"/>
+    <owl:disjointWith rdf:resource="#Rule"/>
+    <owl:disjointWith rdf:resource="#PolicySet"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PolicyCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Obligation"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Condition"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#Resource">
+    <owl:disjointWith rdf:resource="#RuleCombiningAlgorithm"/>
+    <owl:disjointWith rdf:resource="#Environment"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Effect"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Action"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PolicyCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#PolicySet"/>
+    <owl:disjointWith rdf:resource="#Subject"/>
+    <owl:disjointWith rdf:resource="#Policy"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Condition"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Rule"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Obligation"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Target"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Obligation">
+    <owl:disjointWith rdf:resource="#Target"/>
+    <owl:disjointWith rdf:resource="#Environment"/>
+    <owl:disjointWith rdf:resource="#Resource"/>
+    <owl:disjointWith rdf:resource="#Action"/>
+    <owl:disjointWith rdf:resource="#PolicySet"/>
+    <owl:disjointWith rdf:resource="#Policy"/>
+    <owl:disjointWith rdf:resource="#Rule"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Effect"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Subject"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Condition"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PolicyCombiningAlgorithm"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#RuleCombiningAlgorithm"/>
+  </owl:Class>
+  <owl:Class rdf:about="#PolicyCombiningAlgorithm">
+    <owl:disjointWith rdf:resource="#Environment"/>
+    <owl:disjointWith rdf:resource="#Rule"/>
+    <owl:disjointWith rdf:resource="#RuleCombiningAlgorithm"/>
+    <owl:disjointWith rdf:resource="#Resource"/>
+    <owl:disjointWith rdf:resource="#PolicySet"/>
+    <owl:disjointWith rdf:resource="#Target"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Condition"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Obligation"/>
+    <owl:disjointWith rdf:resource="#Subject"/>
+    <owl:disjointWith rdf:resource="#Policy"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Effect"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Action"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Effect">
+    <owl:disjointWith rdf:resource="#Obligation"/>
+    <owl:disjointWith rdf:resource="#Rule"/>
+    <owl:disjointWith rdf:resource="#PolicyCombiningAlgorithm"/>
+    <owl:disjointWith rdf:resource="#RuleCombiningAlgorithm"/>
+    <owl:disjointWith rdf:resource="#Target"/>
+    <owl:disjointWith rdf:resource="#PolicySet"/>
+    <owl:disjointWith rdf:resource="#Subject"/>
+    <owl:disjointWith rdf:resource="#Action"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Condition"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Environment"/>
+    <owl:disjointWith rdf:resource="#Policy"/>
+    <owl:disjointWith rdf:resource="#Resource"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Match"/>
+  <owl:Class rdf:about="#Condition">
+    <owl:disjointWith rdf:resource="#Rule"/>
+    <owl:disjointWith rdf:resource="#Target"/>
+    <owl:disjointWith rdf:resource="#PolicySet"/>
+    <owl:disjointWith rdf:resource="#RuleCombiningAlgorithm"/>
+    <owl:disjointWith rdf:resource="#Obligation"/>
+    <owl:disjointWith rdf:resource="#Environment"/>
+    <owl:disjointWith rdf:resource="#Resource"/>
+    <owl:disjointWith rdf:resource="#PolicyCombiningAlgorithm"/>
+    <owl:disjointWith rdf:resource="#Effect"/>
+    <owl:disjointWith rdf:resource="#Subject"/>
+    <owl:disjointWith rdf:resource="#Policy"/>
+    <owl:disjointWith rdf:resource="#Action"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="propertyPredicate"/>
+  <owl:ObjectProperty rdf:ID="hasPolicySet">
+    <rdfs:domain>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="#hasPolicySet"/>
+        <owl:onClass rdf:resource="#PolicySet"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="#PolicySet"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="classPredicate"/>
+  <owl:ObjectProperty rdf:ID="argument1"/>
+  <owl:ObjectProperty rdf:ID="hasObligation">
+    <rdfs:range rdf:resource="#Obligation"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Policy"/>
+          <owl:Class rdf:about="#PolicySet"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasRule">
+    <rdfs:domain rdf:resource="#Policy"/>
+    <rdfs:range rdf:resource="#Rule"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasMatch">
+    <rdfs:range rdf:resource="#Match"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="hasEval">
+    <rdfs:domain rdf:resource="#Match"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasAttributeValue">
+    <rdfs:domain rdf:resource="#Match"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:ID="hasEffect">
+    <rdfs:domain rdf:resource="#Rule"/>
+    <rdfs:range rdf:resource="#Effect"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasTarget">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Policy"/>
+          <owl:Class rdf:about="#PolicySet"/>
+          <owl:Class rdf:about="#Rule"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:range rdf:resource="#Target"/>
+  </owl:FunctionalProperty>
+  <owl:FunctionalProperty rdf:ID="hasPolicyCombiningAlgorithm">
+    <rdfs:range rdf:resource="#PolicyCombiningAlgorithm"/>
+    <rdfs:domain rdf:resource="#PolicySet"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:FunctionalProperty>
+  <owl:InverseFunctionalProperty rdf:ID="hasRuleCombiningAlgorithm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Policy"/>
+    <rdfs:range rdf:resource="#RuleCombiningAlgorithm"/>
+  </owl:InverseFunctionalProperty>
+  <owl:InverseFunctionalProperty rdf:ID="hasPolicy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#PolicySet"/>
+    <rdfs:range rdf:resource="#Policy"/>
+  </owl:InverseFunctionalProperty>
+  <owl:InverseFunctionalProperty rdf:ID="hasEnvironment">
+    <rdfs:range rdf:resource="#Environment"/>
+    <rdfs:domain rdf:resource="#Target"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:InverseFunctionalProperty>
+  <owl:InverseFunctionalProperty rdf:ID="hasSubject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Target"/>
+    <rdfs:range rdf:resource="#Subject"/>
+  </owl:InverseFunctionalProperty>
+  <owl:InverseFunctionalProperty rdf:ID="hasCondition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Rule"/>
+    <rdfs:range rdf:resource="#Condition"/>
+  </owl:InverseFunctionalProperty>
+  <owl:InverseFunctionalProperty rdf:ID="hasResource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#Target"/>
+    <rdfs:range rdf:resource="#Resource"/>
+  </owl:InverseFunctionalProperty>
+  <owl:InverseFunctionalProperty rdf:ID="hasAction">
+    <rdfs:domain rdf:resource="#Target"/>
+    <rdfs:range rdf:resource="#Action"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </owl:InverseFunctionalProperty>
+  <RuleCombiningAlgorithm rdf:ID="firstApplicable"/>
+  <owl:AllDifferent>
+    <owl:distinctMembers rdf:parseType="Collection">
+      <ComputedEffect rdf:ID="deny"/>
+      <ComputedEffect rdf:about="#permit"/>
+    </owl:distinctMembers>
+  </owl:AllDifferent>
+
+<Policy rdf:ID="TimeRangePolicy">
+  <hasRuleCombiningAlgorithm rdf:resource="urn:oasis:names:tc:xacml:1.0:rule-combining-algorithm:first-applicable"/>
+  <hasTarget>
+    <Target rdf:ID="com.sun.xacml.Target@602b28">
+      <hasResource>
+        <Resource rdf:ID="com.sun.xacml.TargetMatchGroup@1b186ae">
+          <hasMatch>
+            <Match rdf:ID="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <hasAttributeValue rdf:datatype="string">main-door</hasAttributeValue>
+              <hasEval rdf:datatype="string">com.sun.xacml.attr.AttributeDesignator@118bc</hasEval>
+            </Match>
+          </hasMatch>
+        </Resource>
+      </hasResource>
+      <hasAction>
+        <Action rdf:ID="com.sun.xacml.TargetMatchGroup@1ff191d">
+          <hasMatch>
+            <Match rdf:ID="urn:oasis:names:tc:xacml:1.0:function:string-equal">
+              <hasAttributeValue rdf:datatype="string">open</hasAttributeValue>
+              <hasEval rdf:datatype="string">com.sun.xacml.attr.AttributeDesignator@c9d268</hasEval>
+            </Match>
+          </hasMatch>
+        </Action>
+      </hasAction>
+    </Target>
+  </hasTarget>
+  <hasRule>
+    <Rule rdf:ID="NoHumans">
+      <hasEffect rdf:resource="#deny"/>
+    </Rule>
+  </hasRule>
+  <hasRule>
+    <Rule rdf:ID="CommitRule">
+      <hasEffect rdf:resource="#permit"/>
+    </Rule>
+  </hasRule>
+  <hasRule>
+    <Rule rdf:ID="DenyAllOthers">
+      <hasEffect rdf:resource="#deny"/>
+    </Rule>
+  </hasRule>
+</Policy>
+
+  <owl:AllDisjointClasses>
+    <owl:members>
+      <rdf:List>
+        <rdf:rest>
+          <rdf:List>
+            <rdf:rest>
+              <rdf:List>
+                <rdf:rest>
+                  <rdf:List>
+                    <rdf:rest>
+                      <rdf:List>
+                        <rdf:first rdf:resource="#Obligation"/>
+                        <rdf:rest>
+                          <rdf:List>
+                            <rdf:rest>
+                              <rdf:List>
+                                <rdf:rest>
+                                  <rdf:List>
+                                    <rdf:rest>
+                                      <rdf:List>
+                                        <rdf:rest>
+                                          <rdf:List>
+                                            <rdf:rest>
+                                              <rdf:List>
+                                                <rdf:rest>
+                                                  <rdf:List>
+                                                    <rdf:rest>
+                                                      <rdf:List>
+                                                        <rdf:first rdf:resource="#Target"/>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                      </rdf:List>
+                                                    </rdf:rest>
+                                                    <rdf:first rdf:resource="#Subject"/>
+                                                  </rdf:List>
+                                                </rdf:rest>
+                                                <rdf:first rdf:resource="#RuleCombiningAlgorithm"/>
+                                              </rdf:List>
+                                            </rdf:rest>
+                                            <rdf:first rdf:resource="#Rule"/>
+                                          </rdf:List>
+                                        </rdf:rest>
+                                        <rdf:first rdf:resource="#Resource"/>
+                                      </rdf:List>
+                                    </rdf:rest>
+                                    <rdf:first rdf:resource="#PolicySet"/>
+                                  </rdf:List>
+                                </rdf:rest>
+                                <rdf:first rdf:resource="#PolicyCombiningAlgorithm"/>
+                              </rdf:List>
+                            </rdf:rest>
+                            <rdf:first rdf:resource="#Policy"/>
+                          </rdf:List>
+                        </rdf:rest>
+                      </rdf:List>
+                    </rdf:rest>
+                    <rdf:first rdf:resource="#Environment"/>
+                  </rdf:List>
+                </rdf:rest>
+                <rdf:first rdf:resource="#Effect"/>
+              </rdf:List>
+            </rdf:rest>
+            <rdf:first rdf:resource="#Condition"/>
+          </rdf:List>
+        </rdf:rest>
+        <rdf:first rdf:resource="#Action"/>
+      </rdf:List>
+    </owl:members>
+  </owl:AllDisjointClasses>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->

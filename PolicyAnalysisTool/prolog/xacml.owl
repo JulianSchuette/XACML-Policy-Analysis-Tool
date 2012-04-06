@@ -1,0 +1,458 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY Ontology1226501339 "http://www.owl-ontologies.com/Ontology1226501339.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.owl-ontologies.com/Ontology1226501339.owl#"
+     xml:base="http://www.owl-ontologies.com/Ontology1226501339.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:Ontology1226501339="http://www.owl-ontologies.com/Ontology1226501339.owl#">
+    <owl:Ontology rdf:about=""/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasAction -->
+
+    <owl:ObjectProperty rdf:about="#hasAction">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="#Action"/>
+        <rdfs:domain rdf:resource="#Target"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasCondition -->
+
+    <owl:ObjectProperty rdf:about="#hasCondition">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Rule"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasCondition"/>
+                <owl:onClass rdf:resource="#Condition"/>
+                <owl:maxCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:maxCardinality>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasEffect -->
+
+    <owl:ObjectProperty rdf:about="#hasEffect">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="#Effect"/>
+        <rdfs:domain rdf:resource="#Rule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasEnvironment -->
+
+    <owl:ObjectProperty rdf:about="#hasEnvironment">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="#Environment"/>
+        <rdfs:domain rdf:resource="#Target"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasObligation -->
+
+    <owl:ObjectProperty rdf:about="#hasObligation">
+        <rdfs:range rdf:resource="#Obligation"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Policy"/>
+                    <rdf:Description rdf:about="#PolicySet"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicy -->
+
+    <owl:ObjectProperty rdf:about="#hasPolicy">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="#Policy"/>
+        <rdfs:domain rdf:resource="#PolicySet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicyCombiningAlgorithm -->
+
+    <owl:ObjectProperty rdf:about="#hasPolicyCombiningAlgorithm">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="#PolicyCombiningAlgorithm"/>
+        <rdfs:domain rdf:resource="#PolicySet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasPolicySet -->
+
+    <owl:ObjectProperty rdf:about="#hasPolicySet">
+        <rdfs:range rdf:resource="#PolicySet"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPolicySet"/>
+                <owl:onClass rdf:resource="#PolicySet"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasResource -->
+
+    <owl:ObjectProperty rdf:about="#hasResource">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="#Resource"/>
+        <rdfs:domain rdf:resource="#Target"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasRule -->
+
+    <owl:ObjectProperty rdf:about="#hasRule">
+        <rdfs:domain rdf:resource="#Policy"/>
+        <rdfs:range rdf:resource="#Rule"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasRuleCombiningAlgorithm -->
+
+    <owl:ObjectProperty rdf:about="#hasRuleCombiningAlgorithm">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Policy"/>
+        <rdfs:range rdf:resource="#RuleCombiningAlgorithm"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasSubject -->
+
+    <owl:ObjectProperty rdf:about="#hasSubject">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:range rdf:resource="#Subject"/>
+        <rdfs:domain rdf:resource="#Target"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#hasTarget -->
+
+    <owl:ObjectProperty rdf:about="#hasTarget">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="#Target"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Policy"/>
+                    <rdf:Description rdf:about="#PolicySet"/>
+                    <rdf:Description rdf:about="#Rule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#Action -->
+
+    <owl:Class rdf:about="#Action">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#Condition -->
+
+    <owl:Class rdf:about="#Condition">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#Effect -->
+
+    <owl:Class rdf:about="#Effect">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#Environment -->
+
+    <owl:Class rdf:about="#Environment">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#Obligation -->
+
+    <owl:Class rdf:about="#Obligation">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#Policy -->
+
+    <owl:Class rdf:about="#Policy">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#PolicyCombiningAlgorithm -->
+
+    <owl:Class rdf:about="#PolicyCombiningAlgorithm">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#PolicySet -->
+
+    <owl:Class rdf:about="#PolicySet">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#Resource -->
+
+    <owl:Class rdf:about="#Resource">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#Rule -->
+
+    <owl:Class rdf:about="#Rule">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#RuleCombiningAlgorithm -->
+
+    <owl:Class rdf:about="#RuleCombiningAlgorithm">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#Subject -->
+
+    <owl:Class rdf:about="#Subject">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#Target -->
+
+    <owl:Class rdf:about="#Target">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#deny -->
+
+    <Effect rdf:about="#deny"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#myCondition -->
+
+    <Condition rdf:about="#myCondition"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#myObligation -->
+
+    <Obligation rdf:about="#myObligation"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#myOtherPolicy -->
+
+    <Policy rdf:about="#myOtherPolicy">
+        <hasRule rdf:resource="#myRule"/>
+        <hasTarget rdf:resource="#myTarget"/>
+    </Policy>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#myOtherTarget -->
+
+    <Target rdf:about="#myOtherTarget"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicy -->
+
+    <Policy rdf:about="#myPolicy">
+        <hasObligation rdf:resource="#myObligation"/>
+        <hasRule rdf:resource="#myRule"/>
+        <hasRuleCombiningAlgorithm rdf:resource="#myRuleCombiningAlgorithm"/>
+        <hasTarget rdf:resource="#myTarget"/>
+    </Policy>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicyCombiningAlgorithm -->
+
+    <PolicyCombiningAlgorithm rdf:about="#myPolicyCombiningAlgorithm"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#myPolicySet -->
+
+    <PolicySet rdf:about="#myPolicySet">
+        <hasObligation rdf:resource="#myObligation"/>
+        <hasPolicy rdf:resource="#myPolicy"/>
+        <hasPolicyCombiningAlgorithm rdf:resource="#myPolicyCombiningAlgorithm"/>
+        <hasTarget rdf:resource="#myTarget"/>
+    </PolicySet>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#myRule -->
+
+    <Rule rdf:about="#myRule">
+        <hasCondition rdf:resource="#myCondition"/>
+        <hasTarget rdf:resource="#myTarget"/>
+        <hasEffect rdf:resource="#permit"/>
+    </Rule>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#myRuleCombiningAlgorithm -->
+
+    <RuleCombiningAlgorithm rdf:about="#myRuleCombiningAlgorithm"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#myTarget -->
+
+    <Target rdf:about="#myTarget"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1226501339.owl#permit -->
+
+    <Effect rdf:about="#permit"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#deny"/>
+            <rdf:Description rdf:about="#permit"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="#myTarget"/>
+            <rdf:Description rdf:about="#myOtherTarget"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="#Action"/>
+            <rdf:Description rdf:about="#Condition"/>
+            <rdf:Description rdf:about="#Effect"/>
+            <rdf:Description rdf:about="#Environment"/>
+            <rdf:Description rdf:about="#Obligation"/>
+            <rdf:Description rdf:about="#Policy"/>
+            <rdf:Description rdf:about="#PolicyCombiningAlgorithm"/>
+            <rdf:Description rdf:about="#PolicySet"/>
+            <rdf:Description rdf:about="#Resource"/>
+            <rdf:Description rdf:about="#Rule"/>
+            <rdf:Description rdf:about="#RuleCombiningAlgorithm"/>
+            <rdf:Description rdf:about="#Subject"/>
+            <rdf:Description rdf:about="#Target"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.941) http://owlapi.sourceforge.net -->
+
