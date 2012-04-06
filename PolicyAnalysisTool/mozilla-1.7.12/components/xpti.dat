@@ -2,12 +2,12 @@
 
 [Header,2]
 0,Version,2,0
-1,AppDir,/home/julian/projekte/imgdb/eclipse-workspace/PolicyAnalysisTool/mozilla-1.7.12
+1,AppDir,/home/julian/git/XACMLAnalysr/PolicyAnalysisTool/mozilla-1.7.12
 
 [Directories,3]
-0,/home/julian/projekte/imgdb/eclipse-workspace/PolicyAnalysisTool/mozilla-1.7.12/components
+0,/home/julian/git/XACMLAnalysr/PolicyAnalysisTool/mozilla-1.7.12/components
 1,/home/julian/.mozilla/plugins
-2,/home/julian/projekte/imgdb/eclipse-workspace/PolicyAnalysisTool/mozilla-1.7.12/plugins
+2,/home/julian/git/XACMLAnalysr/PolicyAnalysisTool/mozilla-1.7.12/plugins
 
 [Files,138]
 0,msgbase.xpt,0,32371,1333634863000
